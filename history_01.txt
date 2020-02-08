@@ -1,0 +1,823 @@
+    1  sudo raspi-config
+    2  sudo reboot
+    3  ls
+    4  cd /home/pi/osr_ws
+    5  rosinstall generator sensor msgs –rosdistro kinetic –deps –wet-only –tar >kineticsensor msgs-wet.rosinstall
+    6  rosinstall_generator sensor_msgs -rosdistro kinetic -deps -wet-only -tar >kinetic-sensor_msgs-wet.rosinstall
+    7  rosinstall generator sensor msgs –rosdistro kinetic –deps –wet-only –tar >kinetic-sensor msgs-wet.rosinstall
+    8  ls
+    9  rosinstall_generator
+   10  rosinstall_generator --rosdistro kinetic --deps --wet-only --tar >kinetic-sensor_msgs-wet.rosinstall
+   11  rosinstall_generator sensor_msgs --rosdistro kinetic --deps --wet-only --tar >kinetic-sensor_msgs-wet.rosinstall
+   12  wstool init src kinetic-sensor_msgs-wet.rosinstall
+   13  exit
+   14  echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+   15  ls -l /dev/serial*
+   16  git clone https://github.com/nasa-jpl/osr-rover-code osr
+   17  cd osr
+   18  ls
+   19  git checkout osr-ROS
+   20  git pull
+   21  cd
+   22  mkdir -p /home/pi/osr_ws/src && cd /home/pi/osr_ws
+   23  catkin_make
+   24  catkin make
+   25  catkin
+   26  cakin
+   27  cd
+   28  cakin
+   29  catkin
+   30  ls
+   31  cd ros_catkin_ws
+   32  ls
+   33  cd src
+   34  ls
+   35  cd
+   36  ls
+   37  cd osr_ws
+   38  ls
+   39  cd src
+   40  ls
+   41  cd
+   42  cd ros_catkin_ws
+   43  ls
+   44  cd src
+   45  ls
+   46  catkin_make
+   47  catkin
+   48  cd catkin
+   49  ls
+   50  cd
+   51  source /opt/ros/kinetic/setup.bash
+   52  sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/kinetic -j2
+   53  cd ros_catkin_ws
+   54  sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/kinetic -j2
+   55  echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+   56  cd
+   57  ls
+   58  rm -rf osr_ws
+   59  ls
+   60  mkdir -p /home/pi/osr_ws/src && cd /home/pi/osr_ws
+   61  catkin_make
+   62  cd /home/pi/osr/ROS
+   63  mv led_screen/ osr/ osr_bringup/ osr_msgs/ /home/pi/osr_ws/src
+   64  cd /home/pi/osr_ws
+   65  rosinstall_generator sensor_msgs -rosdistro kinetic -deps -wet-only -tar >kinetic-sensor_msgs-wet.rosinstall
+   66  ifconfig
+   67  catkin_make
+   68  catkin_make -j2
+   69  source /opt/ros/kinetic/setup.bash
+   70  source /home/pi/osr_ws/devel/setup.bash
+   71  source /home/pi/osr_ws/devel/setup.sh
+   72  sudo nano /.bashrc
+   73  cd
+   74  cd /
+   75  ls
+   76  ls -a
+   77  sudo nano /.bashrc
+   78  ls -a
+   79  cd .
+   80  ls
+   81  cd ..
+   82  ls
+   83  ls -a
+   84  cat .bashrc
+   85  cd
+   86  cd osr_ws
+   87  roslaunch osr_bringup osr.launch
+   88  cd
+   89  cd osr_ws
+   90  ls
+   91  cd
+   92  ls
+   93  cd osr
+   94  ls
+   95  cd osr_ws
+   96  ls
+   97  cd ROS
+   98  ls
+   99  cd -
+  100  ls
+  101  cd
+  102  ls
+  103  cd osr
+  104  ls
+  105  git status
+  106  ls
+  107  cd -
+  108  ls
+  109  rm -rf osr
+  110  ls
+  111  git clone https://github.com/nasa-jpl/osr-rover-code osr
+  112  cd osr
+  113  ls
+  114  cd rover
+  115  ls
+  116  cd -
+  117  git checkout osr-ROS git pull
+  118  git checkout osr-ROS
+  119  ls
+  120  git pull
+  121  git status
+  122  ls
+  123  cd
+  124  cd osr
+  125  ls
+  126  git branch
+  127  git checkout master
+  128  ls
+  129  cd
+  130  ls
+  131  cd osr_ws
+  132  ls
+  133  roslaunch osr_bringup osr.launch
+  134  ls
+  135  cd 
+  136  cd osr
+  137  ls
+  138  git checkout osr-ROS
+  139  ls
+  140  cd ROS
+  141  ls
+  142  cd osr
+  143  ls
+  144  cd -
+  145  ls
+  146  cd led_screen
+  147  ls
+  148  cd -
+  149  ls
+  150  cd
+  151  cd osr_ws
+  152  roslaunch osr_bringup osr.launch
+  153  ls
+  154  cd build ls
+  155  cd
+  156  cd -
+  157  cd build
+  158  ls
+  159  cd osr
+  160  ls
+  161  cd -
+  162  cd ~/osr_ws
+  163  ls
+  164  cd src
+  165  ls
+  166  cd -
+  167  cd
+  168  cd osr
+  169  ls
+  170  git branch
+  171  git checkout master
+  172  ls
+  173  cd rover
+  174  ls
+  175  cd
+  176  cd osr
+  177  git checkout osr-ROS
+  178  ls
+  179  cd ROS
+  180  ls
+  181  cd osr
+  182  ls
+  183  cd scripts
+  184  ls
+  185  cd -
+  186  cd
+  187  cat /.bashrc
+  188  cd osr_ws
+  189  source /opt/ros/kinetic/setup.bash
+  190  source /home/pi/osr_ws/devel/setup.bash
+  191  source /home/pi/osr_ws/devel/setup.sh
+  192  cd
+  193  ls
+  194  cd osr
+  195  cd
+  196  cd osr_ws
+  197  ls
+  198  roslaunch osr_bringup osr.launch
+  199  ls
+  200  cd build
+  201  ls
+  202  cd -
+  203  cd devel
+  204  ls
+  205  cat setup.bash
+  206  ls
+  207  cat setup.sh
+  208  sudo reboot
+  209  echo $ROS_PACKAGE_PATH
+  210  source /home/pi/osr_ws/devel/setup.bash
+  211  echo $ROS_PACKAGE_PATH
+  212  clear
+  213  cd osr_ws
+  214  ls
+  215  roslaunch osr_bringup osr.launch
+  216  source /opt/ros/kinetic/setup.bash
+  217  source /home/pi/osr_ws/devel/setup.bash
+  218  source /home/pi/osr_ws/devel/setup.sh
+  219  cat /.bashrc
+  220  roslaunch osr_bringup osr.launch
+  221  ls
+  222  cd 
+  223  ls -a
+  224  cd .ros
+  225  ls
+  226  cd log
+  227  ls
+  228  cd latest
+  229  ls
+  230  cd -
+  231  cd 545f9ad4-ae48-11e9-a860-b827eb68168d
+  232  ls
+  233  cat roslaunch-raspberrypi-1114.log
+  234  cd
+  235  ls
+  236  cd osr_ws
+  237  ls
+  238  roslaunch osr_bringup osr.launch
+  239  ifconfig
+  240  cd
+  241  cd osr
+  242  ls
+  243  cd ROS
+  244  ls
+  245  cd osr
+  246  ls
+  247  ld
+  248  ls
+  249  cd 
+  250  cd osr
+  251  ls
+  252  cd ROS
+  253  ls
+  254  cd osr
+  255  ls
+  256  cd script
+  257  cd scripts
+  258  ls
+  259  chmod +x joystick.py
+  260  chmod +x roboclaw.py
+  261  chmod +x robot.py
+  262  chmod +x motor_controller.py
+  263  chmod +x roboclaw_wrapper.py
+  264  chmod +x rover.py
+  265  cd
+  266  cd osr_ws
+  267  ls
+  268  source /opt/ros/kinetic/setup.bash
+  269  source /opt/home/pi/osr_ws/devel/setup.bash
+  270  source /home/pi/osr_ws/devel/setup.bash
+  271  source /home/pi/osr_ws/devel/setup.sh
+  272  roslaunch osr_bringup osr.launch
+  273  cd
+  274  cd osr
+  275  ls
+  276  cd ROS
+  277  ls
+  278  cd osr
+  279  ls
+  280  cd
+  281  cd osr
+  282  ls
+  283  git checkout master
+  284  cd
+  285  ls
+  286  cd osr_ws
+  287  ls
+  288  cd src
+  289  ls
+  290  cd-
+  291  cd -
+  292  ls
+  293  cd src
+  294  ls
+  295  cd
+  296  roscore
+  297  ls
+  298  cd osr
+  299  ls
+  300  cd ROS
+  301  ls
+  302  cd osr
+  303  ls
+  304  cd scripts
+  305  ls
+  306  python rover.py
+  307  cd -
+  308  ls
+  309  cd scripts
+  310  ls
+  311  python rover.py
+  312  cd
+  313  ls
+  314  cd osr
+  315  ls
+  316  cd ROS
+  317  ls
+  318  cd osr_msgs
+  319  ls
+  320  cd msg
+  321  ls
+  322  cd -
+  323  cd
+  324  cd osr
+  325  ls
+  326  cd ROS
+  327  echo $ROS_PACKAGE_PATH
+  328  cd
+  329  cd /
+  330  cat /.bashrc
+  331  cd
+  332  ls
+  333  cd osr_ws
+  334  ls
+  335  cd
+  336  cd osr_ws
+  337  catkin_make
+  338  ls
+  339  cd devel
+  340  ls
+  341  echo $ROS_PACKAGE_PATH
+  342  source /home/pi/osr_ws/setup.bash
+  343  source /home/pi/osr_ws/devel/setup.bash
+  344  source /home/pi/osr_ws/devel/setup.sh
+  345  echo $ROS_PACKAGE_PATH
+  346  ls
+  347  cd osr
+  348  ls
+  349  cd
+  350  cd osr_ws
+  351  ls
+  352  roslaunch osr_bringup osr.launch
+  353  rosrun osr ro
+  354  rosrun osr rover.py
+  355  cd
+  356  ls
+  357  ls -a
+  358  cat .bashrc
+  359  sudo nano .bashrc
+  360  ls
+  361  cd osr_ws
+  362  ls
+  363  roslaunch osr_bringup osr.launch
+  364  source /opt/ros/kinetic/setup.bash
+  365  source /home/pi/osr_ws/devel/setup.bash
+  366  source /home/pi/osr_ws/devel/setup.sh
+  367  roslaunch osr_bringup osr.launch
+  368  ls
+  369  cd
+  370  ls
+  371  cd osr
+  372  ls
+  373  cd ROS
+  374  ls
+  375  cd osr
+  376  ls
+  377  cd scripts
+  378  ls
+  379  cp joystick.py /home/pi/osr
+  380  cd /home/pi/osr
+  381  ls
+  382  cd
+  383  cd osr_ws
+  384  roslaunch osr_backup osr.launch
+  385  source /opt/ros/kinetc/setup.bash
+  386  source /opt/ros/kinetic/setup.bash
+  387  source /home/pi/osr_ws/devel/setup.bash
+  388  source /home/pi/osr_ws/devel/setup.sh
+  389  roslaunch osr_bringup osr.launch
+  390  ls
+  391  cd osr
+  392  ls
+  393  cd
+  394  ls
+  395  cd osr
+  396  ls
+  397  rm joystick.py
+  398  cd 
+  399  cd -
+  400  cd ROS
+  401  ls
+  402  cd osr
+  403  ls
+  404  cd script
+  405  ls
+  406  cd scripts
+  407  ls
+  408  cp joystick.py /home/pi/osr/ROS/osr/
+  409  cd -
+  410  ls
+  411  cd
+  412  cd osr_ws
+  413  ls
+  414  roslaunch osr_bringup osr.launch
+  415  ls
+  416  cd 
+  417  cd osr
+  418  ls
+  419  cd ROS
+  420  ls
+  421  cd osr
+  422  ls
+  423  rm joystick.py
+  424  ls
+  425  cd scripts
+  426  ls
+  427  cd 
+  428  cd osr_ws
+  429  ls
+  430  cd
+  431  sudo nano .bashrc
+  432  sudo reboot
+  433  ls
+  434  cd osr_ws
+  435  ls
+  436  roslaunch osr_bringup osr.launch
+  437  echo $ROS_PACKAGE_PATH
+  438  cd
+  439  sudo nano .bashrc
+  440  sudo reboot
+  441  echo $ROS_PACKAGE_PATH 
+  442  roslaunch osr_bringup osr.launch 
+  443  ls
+  444  roscd osr/scripts/
+  445  ls
+  446  chmod +x joystick.py motor_controller.py robot.py rover.py 
+  447  ls
+  448  ls
+  449  cd osr_ws
+  450  ls
+  451  roslaunch osr_bringup osr.launch
+  452  cd
+  453  cd osr
+  454  ls
+  455  cd ROS
+  456  cd /home/pi/osr_ws
+  457  ls
+  458  rosinstall_generator sensor_msgs --rosdistro kinetic --deps --wet-only --tar >kinetic-sensor_msgs-wet.rosinstall
+  459  wstool init src kinetic-sensor_msgs-wet.rosinstall
+  460  wstool install/modify src kinetic-sensor_msgs-wet.rosinstall
+  461  wstool install src kinetic-sensor_msgs-wet.rosinstall
+  462  catkin_make
+  463  sudo /.bashrc
+  464  sudo nano /.bashrc
+  465  sudo nano /home/pi/.bashrc
+  466  cd
+  467  sudo nano ./.bashrc
+  468  sudo nano .bashrc
+  469  ls
+  470  ls -a
+  471  cat .bashrc
+  472  sudo nano .bashrc
+  473  ls
+  474  cd osr_ws
+  475  ls
+  476  roslaunch osr_backup osr.launch
+  477  roslaunch osr_bringup osr.launch
+  478  ls
+  479  cd src
+  480  ls
+  481  sudo nano CMakeLists.txt
+  482  cd -
+  483  roslaunch osr_bringup osr.launch
+  484  ls
+  485  cd src
+  486  ls
+  487  sudo nano CMakeLists.txt
+  488  cd -
+  489  ls
+  490  cd build
+  491  ls
+  492  cd -
+  493  ls
+  494  cd devel
+  495  ls
+  496  cd -
+  497  rosrun src rover.py
+  498  rosrun osr rover.py
+  499  ls
+  500  cd 
+  501  cd osr
+  502  ls
+  503  cd ROS
+  504  ls
+  505  cd osr
+  506  ls
+  507  cd scripts
+  508  ls
+  509  pytoh rover.py
+  510  python rover.py
+  511  ls
+  512  python robot.py
+  513  cd
+  514  ls
+  515  cd osr
+  516  cd
+  517  cd osr_ws
+  518  ls
+  519  cd src
+  520  ls
+  521  sudo nano CMakeLists.txt
+  522  cd -
+  523  roslaunch osr_bringup osr.launch
+  524  rosrun osr rover.py
+  525  ls
+  526  cd build
+  527  ls
+  528  cd osr
+  529  ls
+  530  cd -
+  531  ls
+  532  cd 
+  533  cd osr_ws
+  534  ls
+  535  cd src
+  536  ls
+  537  sudo nano CMakeLists.txt
+  538  cd -
+  539  ls
+  540  cd
+  541  cd osr
+  542  s
+  543  ls
+  544  cd ROS
+  545  ls
+  546  cd osr
+  547  ls
+  548  sudo nano CMakeLists.txt
+  549  ls
+  550  sudo nano CMakeList.txt
+  551  sudo nano CMakeLists.txt
+  552  cd
+  553  ls
+  554  cd osr
+  555  ls
+  556  cd ROS
+  557  ls
+  558  cd osr
+  559  ls
+  560  cd scripts
+  561  ls
+  562  rm robot.pyc
+  563  ls
+  564  sudo chmod +x joystick.py
+  565  sudo chmod +x roboclaw.py
+  566  sudo chmod +x robot.py
+  567  sudo chmod +x motor_controller.py
+  568  sudo chmod +x roboclaw_wrapper.py
+  569  sudo chmod +x rover.py
+  570  cd
+  571  ls
+  572  cd osr_s
+  573  cd osr_ws
+  574  ls
+  575  roslaunch osr_bringup osr.launch
+  576  ls
+  577  cd
+  578  ls
+  579  cd osr
+  580  ls
+  581  cd ROS
+  582  ls
+  583  cd osr
+  584  ls
+  585  mv -r scripts nodes
+  586  mv scripts nodes
+  587  ls
+  588  cd
+  589  cd osr_ws
+  590  ls
+  591  roslaunch osr_bringup osr.launch
+  592  ls
+  593  cd
+  594  ls
+  595  cd osr
+  596  l
+  597  ls
+  598  cd ROS
+  599  ls
+  600  cd osr
+  601  ls
+  602  mv nodes scripts
+  603  ls
+  604  `ls
+  605  ls
+  606  sudo nano CMakeLists.txt
+  607  cd
+  608  ls
+  609  cd osr_ws
+  610  ls
+  611  catkin_make instal
+  612  catkin_make install
+  613  roslaunch osr_bringup osr.launch
+  614  ls
+  615  cd ..
+  616  ls
+  617  sudo nano /.bashrc
+  618  sudo nano ~/.bashrc 
+  619  roslaunch osr_bringup osr.launch
+  620  sudo raspi-conifig
+  621  sudo raspi-config
+  622  rosrun osr motor_controller.py 
+  623  sudo raspi-config
+  624  ls -l /dev/tty*
+  625  ls -l /dev/serial*
+  626  roslaunch osr_bringup osr.launch
+  627  sudo nano /etc/wpa_supplicant.conf
+  628  sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+  629  sudo shutdown -h now
+  630  ls
+  631  cd osr_ws
+  632  l
+  633  ls
+  634  cd src
+  635  ls
+  636  cd led_screen
+  637  ls
+  638  cd scripts
+  639  ls
+  640  chmod +x screen.py
+  641  cd
+  642  cd osr_ws
+  643  ls
+  644  cd src
+  645  ls
+  646  cd osr_bringup
+  647  ls
+  648  cd launch
+  649  ls
+  650  sudo nano osr.launch
+  651  cd
+  652  ls
+  653  cd osr_ws
+  654  ls
+  655  roslaunch osr_bringup ros.launch
+  656  roslaunch osr_bringup osr.launch
+  657  sudo raspi-config
+  658  ls -l /dev/serial*
+  659  cd /boot
+  660  ls
+  661  sudo nano cmdline.txt
+  662  cd /home/pi/osr_ws/src/osr/script && chmod +x *.py
+  663  cd /home/pi/osr_ws/src/osr/scripts && chmod +x *.py
+  664  ls
+  665  cd
+  666  ls
+  667  cd osr_ws
+  668  ls
+  669  roslaunch osr_bringup osr.launch
+  670  cd 
+  671  cd .ros
+  672  ls
+  673  cd log
+  674  ls
+  675  cat latest
+  676  cd 
+  677  cd dfedf68c-ae56-11e9-b38d-b827eb68168d
+  678  ls
+  679  cat roslaunch-raspberrypi-4035.log
+  680  cd -
+  681  cd cbefc9e6-b32c-11e9-bf93-b827eb68168d
+  682  ls
+  683  cat led_screen-5-stdout.log
+  684  cat master.log
+  685  ls
+  686  cd
+  687  sudo screen /dev/ttyUSB0
+  688  ls
+  689  cd /dev/
+  690  ls
+  691  lsusb -t
+  692  sudo shutdown -h now
+  693  df -h
+  694  ls
+  695  ls /opt
+  696  reboot
+  697  sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+  698  sudo apt-get update
+  699  mkdir /home/pi/.ssh
+  700  mkdir work
+  701  ls work/
+  702  ls work/dirtdigger/
+  703  df -h
+  704  cd work/dirtdigger/
+  705  git pull
+  706  ls ~/.ssh
+  707  ping github.com
+  708  git pull
+  709  reboot
+  710  sudo reboot
+  711  sudo apt-get update
+  712  sudo apt-get install xrdp
+  713  cd work/dirtdigger/
+  714  git pull
+  715  sudo raspi-config
+  716  sudo apt-get install xrdp
+  717  ifconfig
+  718  df -h
+  719  ls /opt/ros/
+  720  ls /opt/ros/kinetic/
+  721  cd work
+  722  mv dirtdigger dirtdigger.save
+  723  git clone git@github.com:philwil/dirtdigger.git
+  724  git branch
+  725  cd dirtdigger
+  726  git branch
+  727  git checkout phil
+  728  ls ~/ros_catkin_ws/
+  729  cd ~/ros_catkin_ws/
+  730  ls src
+  731  ls src/ros_comm_msgs/
+  732  ls src/ros_comm_msgs/std_srvs/
+  733  ls src/ros_comm_msgs/std_srvs/srv/
+  734  more src/ros_comm_msgs/std_srvs/srv/Trigger.srv 
+  735  gcc -v
+  736  ls
+  737  ls
+  738  ls external_src/
+  739  ls build_isolated/
+  740  ls build_isolated/catkin
+  741  ls -a build_isolated
+  742  ls -a
+  743  more kinetic-custom_ros.rosinstall 
+  744  ls ../
+  745  cd ..
+  746  ls
+  747  ls thinclient_drives/
+  748  ls osr_ws
+  749  ls osr_ws/build/
+  750  ls osr_ws/
+  751  ls osr_ws/devel/
+  752  ls osr_ws/src
+  753  ls osr_ws/src/osr_bringup/
+  754  ls osr_ws/src/osr_bringup/launch/
+  755  more osr_ws/src/osr_bringup/launch/osr.launch 
+  756  cd work/dirtdigger/python/multicast/
+  757  sudo apt-get install emacs
+  758  emacs notes.txt &
+  759  python test_json.py 
+  760  sudo raspi-config 
+  761  date
+  762  python test_json.py 
+  763  git add *.py
+  764  git commit -m " more json"
+  765  git config --global user.email sysdcs@gmail.com
+  766  git config --global user.name "Phil Wilshire"
+  767  git commit -m " more json"
+  768  git push
+  769  python test_json.py 
+  770  git add *.py
+  771  git commit -m " more json"
+  772  git push
+  773  ls -l ~/.ssh
+  774  cat /proc/cpuinfo
+  775  sudo shutdown -h now
+  776  sudo nano /etc/wpa_supplicant/wpa_supplicant.conf 
+  777  sudo reboot
+  778  ifconfig
+  779  sudo raspi-config 
+  780  cd work/dirtdigger
+  781  cd python/udpdata/
+  782  ps ax | grep udp
+  783  kill 6063
+  784  nohup ./udpdata.py pi3-001-ros > /dev/null
+  785  git pull
+  786  nohup ./udpdata.py pi3-001-ros > /dev/null&
+  787  ifconfig
+  788  cd work/dirtdigger
+  789  git pull
+  790  ping pine64-001
+  791  ping 10.80.20.165
+  792  sudo apt-get update
+  793  df -h
+  794  git pull
+  795  sudo shutdown -h now
+  796  rostopic /list
+  797  rostopic list
+  798  rostopic echo /status
+  799  rostopic list
+  800  rostopic echo /rosout
+  801  rostopic echo /rosout_agg /gg
+  802  rostopic echo /rosout_agg 
+  803  rostopic echo /encoder
+  804  cd osr_ws
+  805  git status
+  806  git init
+  807  git add src/osr_bringup/launch/osr.launch
+  808  git add src/osr/scripts/*.py
+  809  git commit -m " Initial setup"
+  810  git remote add origin git@github.com:philwil/osr_ws.git
+  811  git push -u origin master
+  812  ls
+  813  ls install/
+  814  ls install/bin/
+  815  ls install/share/
+  816  ls install/share/osr_msgs/
+  817  ls install/share/osr_msgs/msg
+  818  ls install/share/osr_msgs/msg/Encoder.msg 
+  819  more install/share/osr_msgs/msg/Encoder.msg 
+  820  ls
+  821  ls devel/
+  822  history
+  823  history > history_01.txt
